@@ -13,30 +13,43 @@
     
   </head>
   <body>
-    <nav class="navbar py-2 bg-white">
-      <dic class="container">
-        <a class="navbar-brand">My Site</a>
-        <div class="d-flex">
+    <nav class="py-2 bg-white navbar">
 
-          <ol class="navbar-nav effect-brackets">
-            <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
-            <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
-            <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
-          </ol>
-          <ul class="navbar-nav mb-2 flex-row">
-            <li class="nav-item"><a href="index.html" class="nav-link"><i class="fas fa-dolly-flatbed"></i></a></li>
-            <li class="nav-item"><a href="about.html" class="nav-link"><i class="far fa-heart"></i></a></li>
-            <li class="nav-item"><a href="contact.html" class="nav-link"><i class="fas fa-user"></i></a></li>
+      <div class="container">
 
-          </ul>
+        <input class="trigger" type="checkbox" id="hamburger">
+        <label for="hamburger">
+            <i class="nav-toggle fas fa-bars"></i>
+        </label>
+
+        <div class="navbar-header">
+            <a class="navbar-brand" href="index.html">
+                <span class="font-weight-bold text-uppercase text-dark">My Site</span>
+            </a>
         </div>
-      </dic>
+
+        <ul class="d-flex navbar-nav effect-brackets">
+            <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+            <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+            <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
+            
+        </ul>
+
+        <ul class="flex-row mb-2 d-flex navbar-nav-btn">
+            <li class="nav-item"><a href="index.html" class="nav-link position-relative"><i class="fas fa-dolly-flatbed"></i><span class="badge rounded-pill bg-primary">2</span></a></li>
+            <li class="nav-item"><a href="about.html" class="nav-link position-relative"><i class="far fa-heart"></i><span class="badge rounded-pill bg-primary">2</span></a></li>
+            <li class="nav-item"><a href="contact.html" class="nav-link"><i class="fas fa-user"></i></a></li>
+        </ul>
+
+      </div>
+
       <!-- navbar  -->
+      
     </nav>
 
     <div class="container">
       <!-- HERO SECTION-->
-      <section class="hero pb-3 d-flex align-items-center">
+      <section class="pb-3 hero d-flex align-items-center">
         <article class="container slider">
             <div class="slides">
                 <div class="overflow">
@@ -47,10 +60,10 @@
                         </article>
                         <article class="slide">
                             <img src="images/slider/2.jpg">
-                            <div class="row px-4 px-lg-5">
+                            <div class="px-4 row px-lg-5">
                                 <div class="slide2 col-lg-6">
-                                    <p class="text-muted text-uppercase mb-2">New Inspiration 2020</p>
-                                    <h2 class="text-uppercase mb-3">20% off on new season</h2>
+                                    <p class="mb-2 text-muted text-uppercase">New Inspiration 2020</p>
+                                    <h2 class="mb-3 text-uppercase">20% off on new season</h2>
                                     <a class="btn btn-primary rounded-1" href="shop.html">
                                         <span>Browse collections</span>
                                     </a>
@@ -60,10 +73,10 @@
                         <article class="slide"><img src="images/slider/3.jpg"></article>
                         <article class="slide">
                             <img src="images/slider/4.jpg">
-                            <div class="row px-4 px-lg-5">
+                            <div class="px-4 row px-lg-5">
                                 <div class="slide2 col-lg-6">
-                                    <p class="text-muted text-uppercase mb-2">New Inspiration 2020</p>
-                                    <h2 class="text-uppercase mb-3">20% off on new season</h2>
+                                    <p class="mb-2 text-muted text-uppercase">New Inspiration 2020</p>
+                                    <h2 class="mb-3 text-uppercase">20% off on new season</h2>
                                     <a class="btn btn-primary rounded-1" href="shop.html">
                                         <span>Browse collections</span>
                                     </a>
@@ -82,8 +95,8 @@
     <section class="pt-5">
             <!-- Categories -->
             <header class="text-center">
-                <p class="text-muted text-uppercase mb-1">Carefully created collections</p>
-                <h2 class="h5 text-uppercase mb-4">Browse our categories</h2>
+                <p class="mb-1 text-muted text-uppercase">Carefully created collections</p>
+                <h2 class="mb-4 h5 text-uppercase">Browse our categories</h2>
             </header>
         
             <div class="row">
@@ -159,16 +172,16 @@
 
         <div class="container pt-5 row products-container" style="margin-left: 5px;">
           <!-- products container -->
-          <div class="product-wrapper pb-5">
-            <article class="product mb-4">
+          <div class="pb-5 product-wrapper">
+            <article class="mb-4 product">
               <!-- product -->
               <span class="badge rounded-0 bg-danger">Soldout</span>
               <a href="detail.html">
                 <img src="./images/product.jpg" class="img-fluid" alt="text description"/>
               </a>
-              <div class="btn-block shadow d-inline-block">
+              <div class="shadow btn-block d-inline-block">
                 <a class="product-btn" href="#"><i class="fas fa-heart"></i></a>
-                <a class="product-btn" href="#productView" data-bs-toggle="modal"><i class="fas fa-expand"></i></a>
+                <a class="product-btn detail" href="#"><i class="fas fa-expand"></i></a>
                 <a class="product-btn" href="cart.html"><i class="fas fa-dolly-flatbed"></i></a>
               </div>
 
@@ -183,6 +196,7 @@
           <!-- product -->
         </div>
         <!-- /products container -->
+
     </div>
     </section>
     <!-- showcase  -->
@@ -208,7 +222,7 @@
         <div class="row">
 
           <div class="col-lg-3 col-md-6">
-            <div class="d-flex align-items-center p-4 w-100">
+            <div class="p-4 d-flex align-items-center w-100">
               <div class="">
                 <h6>Feature 1</h6>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
@@ -217,7 +231,7 @@
           </div>
 
           <div class="col-lg-3 col-md-6">
-            <div class="d-flex align-items-center p-4 w-100">
+            <div class="p-4 d-flex align-items-center w-100">
               <div class="">
                 <h6>Feature 2</h6>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
@@ -225,7 +239,7 @@
             </div>
           </div>
           <div class="col-lg-3 col-md-6">
-            <div class="d-flex align-items-center p-4 w-100">
+            <div class="p-4 d-flex align-items-center w-100">
               <div class="">
                 <h6>Feature 3</h6>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
@@ -233,7 +247,7 @@
             </div>
           </div>
           <div class="col-lg-3 col-md-6">
-            <div class="d-flex align-items-center p-4 w-100">
+            <div class="p-4 d-flex align-items-center w-100">
               <div class="">
                 <h6>Feature 4</h6>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
@@ -251,7 +265,7 @@
 
       <div class="container py-5">
         <div class="row">
-          <div class="col-md-4 col-sm-12 mb-3 mb-md-0">
+          <div class="mb-3 col-md-4 col-sm-12 mb-md-0">
             <p>My Site</p>
             <ul class="list-inline">
               <li class="list-inline-item">t1</li>
@@ -260,18 +274,18 @@
               <li class="list-inline-item">t4</li>
             </ul>
           </div>
-          <div class="col-md-2 col-sm-12 mb-3 mb-md-0">
+          <div class="mb-3 col-md-2 col-sm-12 mb-md-0">
             <h6 class="text-white">Menu</h6>
-            <ul class="list-unstyled text-muted mb-0">
+            <ul class="mb-0 list-unstyled text-muted">
               <li class="mb-2"> <a class="reset-anchor" href="#">About</a></li>
               <li class="mb-2"><a class="reset-anchor" href="#">Blog</a></li>
               <li class="mb-2"><a class="reset-anchor" href="#">Contact</a></li>
               <li class="mb-2"><a class="reset-anchor" href="#">FAQ</a></li>
             </ul>
           </div>
-          <div class="col-md-2 col-sm-12 mb-3 mb-md-0">
+          <div class="mb-3 col-md-2 col-sm-12 mb-md-0">
             <h6 class="text-white">Checkout</h6>
-            <ul class="list-unstyled text-muted mb-0">
+            <ul class="mb-0 list-unstyled text-muted">
               <li class="mb-2"> <a class="reset-anchor" href="#">My Account</a></li>
               <li class="mb-2"> <a class="reset-anchor" href="#">Orders Tracking</a></li>
               <li class="mb-2"> <a class="reset-anchor" href="#">Checkout</a></li>
@@ -279,10 +293,10 @@
             </ul>
           </div>
 
-          <div class="col-md-4 col-sm-12 mb-3 mb-md-0">
+          <div class="mb-3 col-md-4 col-sm-12 mb-md-0">
 
-            <p class="lead mb-1 text-white">Telephon 1234567</p>
-            <ul class="list-inline mb-0">
+            <p class="mb-1 text-white lead">Telephon 1234567</p>
+            <ul class="mb-0 list-inline">
               <li class="list-inline-item"><a class="social-icon" href="#"><i class="fab fa-facebook-f"></i></a></li>
               <li class="list-inline-item"><a class="social-icon" href="#"><i class="fab fa-twitter"></i></a></li>
               <li class="list-inline-item"><a class="social-icon" href="#"><i class="fab fa-youtube"></i></a></li>
@@ -300,7 +314,68 @@
       
     </footer>
 
+
+<!--  Modal -->
+  <div class="modal fade" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-xl modal-dialog-centered">
+      <div class="border-0 modal-content rounded-0">
+        <div class="p-0 overflow-hidden shadow modal-body">
+          <!-- row -->
+          <div class="row align-items-stretch">
+
+            <div class="col-lg-6 p-lg-0">
+              <div class="bg-center bg-cover product-view d-block h-100"
+                style="background: url(images/product.jpg)"></div>
+            </div>
+
+            <div class="col-lg-6">
+
+              <button class="p-4 border-0 close modal-close" type="button"><i class="fas fa-times"></i></button>
+
+              <div class="p-5 my-md-4">
+
+                <ul class="mb-2 list-inline">
+                  <li class="m-0 list-inline-item"><i class="fas fa-star small text-warning"></i></li>
+                  <li class="m-0 list-inline-item"><i class="fas fa-star small text-warning"></i></li>
+                  <li class="m-0 list-inline-item"><i class="fas fa-star small text-warning"></i></li>
+                  <li class="m-0 list-inline-item"><i class="fas fa-star small text-warning"></i></li>
+                  <li class="m-0 list-inline-item"><i class="fas fa-star small text-warning"></i></li>
+                </ul>
+
+                <h2 class="h5 text-uppercase">Kui Ye Chen’s AirPods</h2>
+                <p class="text-muted">$250</p>
+                <p class="mb-4 text-small">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ut ullamcorper leo, eget euismod orci. Cum sociis natoque penatibus et magnis dis parturient montes nascetur ridiculus mus. Vestibulum ultricies aliquam convallis.</p>
+
+                <ul class="mb-4 list-inline">
+                  <li class="list-inline-item me-3"><strong>Quantity</strong></li>
+                  <li class="list-inline-item">
+                    <div class="p-1 border d-flex align-items-center justify-content-between">
+                      <div class="py-0 quantity">
+                        <button class="p-0 dec-btn" onclick="decrease(this)"><i class="fas fa-caret-left"></i></button>
+                        <input class="p-0 border-0 form-control shadow-0 quantity-result" type="text" value="1">
+                        <button class="p-0 inc-btn" onclick="increase(this)"><i class="fas fa-caret-right"></i></button>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="list-inline-item"><a class="btn btn-primary" href="cart.html">
+                      Add to cart</a></li>
+                </ul>
+                <a class="p-0 reset-anchor" href="#">
+                  <i class="far fa-heart me-2"></i>Add to wish list
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <script src="" async defer></script>
+<script src="js/app.js"></script>
+
+
+
   </body>
 </html>
